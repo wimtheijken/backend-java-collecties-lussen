@@ -9,7 +9,7 @@ public class Bonus {
 
         HashSet<Integer> secretnumber = randomnumbergenerator();
         String stringnumber = setToStringConverter(secretnumber);
-        System.out.println(stringnumber);
+        System.out.println(stringnumber); // dit verklapt het juiste antwoord (niet eerlijk maar wel fijn om te testen)
         feedback(stringnumber);
     }
 
@@ -19,7 +19,6 @@ public class Bonus {
         while (set.size() < 4) {
             int int_random = random.nextInt(10);
             set.add(int_random);
-            System.out.println(set);
         }
         return set;
     }
@@ -28,7 +27,6 @@ public class Bonus {
            String numberToString = "";
         for (int number : secretnumber){
             numberToString += number;
-                    System.out.println(numberToString);
         }
         return numberToString;
     }
